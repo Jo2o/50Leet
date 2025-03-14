@@ -1,5 +1,7 @@
 package org.jo2o.fiftyleet.`01-WaterLineTanks`
 
+import kotlin.math.abs
+
 fun main() {
     val input = intArrayOf(2, 8, 10, 1, 5)
     val valIdx = createValIdxMap(input)
@@ -15,10 +17,10 @@ private fun getAreaWithSameOrHigherAndFurthest(valIdx: Map<Int, Int>, n1: Int): 
     var maxDist = 0
     var n2 = 0
     for (k in valIdx.keys) {
-        if (k <= n1) {
+        if (k < n1) {
             continue
         }
-        val dist = valIdx[k]!! - valIdx[n1]!!
+        val dist = abs(valIdx[k]!! - valIdx[n1]!!)
         if (dist > maxDist) {
             maxDist = dist
             n2 = k
