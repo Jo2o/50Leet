@@ -1,4 +1,4 @@
-package org.jo2o.fiftyleet.`01-WaterLineTanks`
+package `01-WaterLineTanks`
 
 import kotlin.math.abs
 

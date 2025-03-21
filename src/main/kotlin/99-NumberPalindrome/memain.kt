@@ -1,4 +1,4 @@
-package org.jo2o.fiftyleet.`99-NumberPalindrome`
+package `99-NumberPalindrome`
 
 fun main() {
     println(isPalindrome(202))
